@@ -3,12 +3,12 @@
   pdbug
 </h1>
 <p align="center" dir="auto">
-  <b>"Paint flashing" debug utility for sprite-based Lua Playdate games</b>
+  <b>Debug overlay utility for Lua-based Playdate games</b>
 </p>
 
 ## Overview
 
-Pdbug ("p debug") taps into the Playdate's sprite library to provide a **paint flashing** overlay that highlights sprites when they have been redrawn. By default sprites will only redraw when something has changed, so this can help debug various issues you might run into when building sprite-based scenes and UIs.
+Pdbug ("p debug") taps into the Playdate's sprite library to provide a **paint flashing** overlay that highlights sprites when they have been redrawn. It can help to find performance issues (less things drawing per frame is better!) and debug various pitfalls you might come across when developing sprite-based games.
 
 This utility relies on [`playdate.debugDraw`](https://sdk.play.date/1.9.0/Inside%20Playdate.html#playdate-debugdraw), and as such it is only available in the Playdate Simulator.
 

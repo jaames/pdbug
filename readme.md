@@ -35,23 +35,27 @@ pdbug:setEnabled(true)
 
 #### `pdbug:setEnabled(enabled)`
 
+If `enabled` is true, the overlay will be turned on, otherwise it will be turned off.
+
 #### `pdbug:setOverlayColor(r, g, b, a)`
 
-Set the debug overlay color (defaults to `255, 0, 40, 0.75`. `r`, `g` and `b` should be between `0` and `255`, and `a` should be between `0` and `1`.
+Set the debug overlay color from red, green, blue and alpha values. 
+
+`r`, `g` and `b` should be between 0 and 255, and `a` should be between 0 and 1. The default color is `255, 0, 40, 0.75`.
 
 #### `pdbug:addPaintRect(x, y, w, h)`
 
-Use this if you need to manually add a rectangle to the paint flashing overlay. `x` and `y` should give the position of the rectangle's top-left corner, `w` and `h` should give its width and height.
+Use this if you ever need to manually add a rectangle to the paint flashing overlay. `x` and `y` should give the position of the rectangle's top-left corner, `w` and `h` should give its width and height.
 
 ### Options
 
 #### `pdbug.showFPS`
 
-Boolean indicating whether the FPS counter should be visible when the overlay is enabled. Defaults to true.
+If set to true, the FPS counter will be visible when the overlay is enabled. Defaults to true.
 
 #### `pdbug.showPaintFlashing`
 
-Boolean indicating whether paint flashing rectangles should be visible when the overlay is enabled. Defaults to true.
+If set to true, paint flashing rectangles will be visible when the overlay is enabled. Defaults to true.
 
 #### `pdbug.paintFlashLineWidth`
 
